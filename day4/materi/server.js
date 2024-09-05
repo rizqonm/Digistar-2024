@@ -1,5 +1,5 @@
-const mongodb = require('./database/mongodb/db');
-const userQuery = require('./database/mongodb/query'); 
+const mongodb = require('./materi/database/mongodb/db');
+const userQuery = require('./materi/database/mongodb/query'); 
 
 mongodb.connectDB();
 

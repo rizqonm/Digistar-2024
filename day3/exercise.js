@@ -45,8 +45,8 @@ const updateTodo = (req, res) => {
 const deleteTodo = (req, res) => {
     const { id } = req.params;
 
-    const todo = todos.find(t => t.id === id);
-    if (!todo) {
+    const todoIndex = todos.findIndex(t => t.id === id);
+    if (todoIndex === -1) {
         return res.status(404).json({ error: 'Todo not found' });
     }
 
